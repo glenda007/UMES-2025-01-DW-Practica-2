@@ -4,51 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Platos Fuertes</title>
-        <style> 
-            body {
-                font-family: Arial, sans-serif;
-            }
-        </style>
+        <link rel="stylesheet" href="new.styles.css">
     </head>
     <body>
-        <h1 style="text-align: center;">Platos Fuertes</h1>
+        <header>
+            <h1>Platos Fuertes</h1>
+        </header>
 
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px; gap: 20px;">
-
-            <div style="width: 250px; text-align: center; border: 1px solid #ddd; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
-                <img src="/Imagenes/Colibri-Restaurante2-885x500.jpg" alt="Hamburguesa de Carne y Tocino" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+        <section class="menu">
+            <div class="plato">
+                <img src="/Imagenes/Colibri-Restaurante2-885x500.png" alt="Hamburguesa de Carne y Tocino">
                 <h3>Hamburguesa de Carne y Tocino</h3>
-                <p>Una jugosa hamburguesa de carne de res, perfectamente cocida, acompañada de crujiente tocino ahumado, lechuga fresca, tomate maduro y una suave salsa 
-                    especial. Todo servido en un pan de hamburguesa suave y esponjoso, creando la combinación perfecta de sabor y textura en cada bocado.</p>
-                <p><strong>Q.60</strong></p>
+                <p>Una jugosa hamburguesa de carne de res con tocino ahumado, lechuga fresca, tomate y una salsa especial, servida en un pan suave y esponjoso.</p>
+                <p class="precio"><strong>Q.60</strong></p>
             </div>
 
-            <div style="width: 250px; text-align: center; border: 1px solid #ddd; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
-                <img src="/Imagenes/unnamed.jpg" alt="Pepian de Pollo" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-                <h3>Pepian de Pollo</h3>
-                <p>Consiste en un guiso espeso preparado con pollo, que se cocina junto con una mezcla de tomates, chiles, ajonjolí, almendras y especias locales como el 
-                    comino y la canela. La salsa que resulta de estos ingredientes tiene una textura rica y un sabor ahumado y ligeramente picante.</p>
-                <p><strong>Q.40</strong></p>
+            <div class="plato">
+                <img src="/Imagenes/unnamed.jpg" alt="Pepian de Pollo">
+                <h3>Pepián de Pollo</h3>
+                <p>Guiso espeso con pollo, tomates, chiles, ajonjolí, almendras y especias locales como comino y canela, con un sabor ahumado y ligeramente picante.</p>
+                <p class="precio"><strong>Q.40</strong></p>
             </div>
 
-            <div style="width: 250px; text-align: center; border: 1px solid #ddd; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
-                <img src="/Imagenes/mojarra-frita.png" alt="Mojarras Fritas" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            <div class="plato">
+                <img src="/Imagenes/mojarra-frita.png" alt="Mojarras Fritas">
                 <h3>Mojarras Fritas</h3>
-                <p>El sabor de las mojarras fritas es suave y delicado, y su textura crujiente las convierte en una delicia. A menudo, se aderezan con un toque de limón y salsa picante, 
-                    lo que realza aún más su sabor.</p>
-                <p><strong>Q.60</strong></p>
+                <p>Deliciosas mojarras fritas crujientes, aderezadas con limón y salsa picante, realzando su exquisito sabor.</p>
+                <p class="precio"><strong>Q.60</strong></p>
             </div>
 
-            <div style="width: 250px; text-align: center; border: 1px solid #ddd; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
-                <img src="/Imagenes/gyap5vwthufzjgot9iah.jpg" alt="Kak'ik" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            <div class="plato">
+                <img src="/Imagenes/gyap5vwthufzjgot9iah.jpg" alt="Kak'ik">
                 <h3>Kak'ik</h3>
-                <p> El kak'ik es una receta que refleja la fusión de la cocina indígena con influencias coloniales, y es considerada un plato representativo de la cultura y 
-                    la identidad guatemalteca.</p>
-                <p><strong>Q.25</strong></p>
+                <p>El kak'ik es una receta tradicional guatemalteca, con influencia indígena y colonial, representando la identidad del país.</p>
+                <p class="precio"><strong>Q.25</strong></p>
             </div>
-        </div>
-        <p style="text-align:center;">
-            <a href="../index.html">Volver al inicio</a>
-        </p>
+        </section>
+
+        <footer>
+            <button class="btn-volver" onclick="window.location.href='../index.html'">Volver al Inicio</button>
+        </footer>
     </body>
 </html>
